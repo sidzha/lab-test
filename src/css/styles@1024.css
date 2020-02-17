@@ -1,0 +1,289 @@
+@media only screen and (min-width: 1024px) {
+
+  .container {
+    /* main wrapper */
+    width: 944px;
+    padding: 0;
+  }
+
+  .heading--h1 {
+    /* main h1 style*/
+    font-size: 52px;
+  }
+
+  .heading--h2 {
+    font-size: 50px;
+  }
+
+  /* ---- header ---- */
+
+  .header {
+    padding-top: 30px;
+    background-color: #1F242C;
+    margin-bottom: 0;
+  }
+
+  .header__nav--active {
+    background-color: #222831;
+    font-size: 20px;
+    padding: 5px 10px 0;
+    line-height: 45px;
+    top: 75px;
+  }
+
+  .header__phone {
+    font-size: 25px;
+  }
+
+  .la-phone {
+    display: none;
+  }
+
+  /* ---- about ----*/
+
+  .about {
+    position: relative;
+    padding-top: 32px;
+    width: 100%;
+    background-color: #1F242C;
+  }
+
+  .symbols__item--1 {
+    /* symbols */
+    font-size: 45px;
+    transform: translate(-144px, 66px) rotate(15deg);
+  }
+
+  .symbols__item--2 {
+    /* symbols */
+    font-size: 43px;
+    transform: translate(-481px, -12px) rotate(30deg);
+  }
+
+  .symbols__item--3 {
+    /* symbols */
+    font-size: 29px;
+    transform: translate(326px, -13px) rotate(-11deg);
+  }
+
+  .symbols__item--4 {
+    /* symbols */
+    font-size: 55px;
+    transform: translate(-502px, 467px) rotate(15deg);
+  }
+
+  .symbols__item--5 {
+    /* symbols */
+    display: inline-block;
+    font-size: 38px;
+    transform: translate(-208px, 421px) rotate(-24deg);
+  }
+
+  .about__photo {
+    position: absolute;
+    top: 31px;
+    left: 39%;
+    padding-left: 0px;
+    padding-right: 295px;
+    background-size: contain;
+    background-position: 38% 125px;
+    height: 665px;
+  }
+
+  .about__photo img {
+    object-fit: contain;
+    height: 637px;
+    /*размер по макету*/
+  }
+
+  .about__name {
+    position: relative;
+    text-align: left;
+    padding-top: 205px;
+    background-size: contain;
+    height: 660px;
+    /* высота нужна для отображения блока с фоткой*/
+  }
+
+  .about__name .heading {
+    margin-bottom: 21px;
+  }
+
+  .about__desc {
+    font-size: 25px;
+    padding: 0;
+    margin-bottom: 37px;
+  }
+
+  /* ---- skills ----*/
+
+  .skills {
+    margin-bottom: 0;
+    padding-top: 85px;
+    padding-bottom: 100px;
+  }
+
+  .skills .heading {
+    margin-bottom: 90px;
+  }
+
+  .skills__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 649px;
+    margin-bottom: 15px;
+  }
+
+  .skills__item {
+    line-height: 30px;
+    font-size: 20px;
+    padding-top: 92px;
+    margin-bottom: 79px;
+    width: 271px;
+    background-size: 80px 74px;
+  }
+
+  /* ---- works ---- */
+
+  .works {
+    background-color: #1F242C;
+    padding-top: 85px;
+    padding-bottom: 100px;
+    margin-bottom: 0;
+  }
+
+  .works .heading {
+    font-size: 52px;
+    margin-bottom: 92px;
+  }
+
+  .works__carousel {
+    margin-bottom: 100px;
+  }
+
+  .flickity-viewport {
+    margin-bottom: 95px;
+  }
+
+  .carousel-cell {
+    /* flickity-tools */
+    width: 50%;
+  }
+
+  .flickity-button {
+    /* flickity-tools */
+    display: none;
+  }
+
+  .flickity-page-dots {
+    /* flickity-tools */
+    bottom: -74px;
+  }
+
+  .flickity-page-dots .dot {
+    /* flickity-tools */
+    height: 20px;
+    width: 20px;
+    margin: 0 14px;
+  }
+
+  .works__img {
+    width: 456px;
+    height: 359px;
+  }
+
+  .works__paragraph {
+    font-size: 25px;
+  }
+
+  /* ---- price ---- */
+
+  .price {
+    background-color: #1F242C;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .price .about__symbols {
+    display: inline-block;
+  }
+
+  .symbols__item--6 {
+    /* symbols */
+    font-size: 38px;
+    transform: translate(819px, 153px) rotate(-25deg);
+  }
+
+  .symbols__item--7 {
+    /* symbols */
+    font-size: 29px;
+    transform: translate(110px, -110px) rotate(25deg);
+  }
+
+  .symbols__item--8 {
+    /* symbols */
+    font-size: 23px;
+    transform: translate(462px, 172px) rotate(22deg);
+  }
+
+  .symbols__item--9,
+  .symbols__item--10 {
+    display: none;
+  }
+
+
+  .price .heading {
+    font-size: 36px;
+    line-height: 55px;
+    margin-bottom: 32px;
+  }
+
+  .price__desc {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  /* ---- footer ---- */
+
+  .footer {
+    padding-top: 90px;
+  }
+
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 74px;
+  }
+
+  .footer__menu-list {
+    margin-bottom: 0;
+    margin-right: 79px;
+    font-size: 20px;
+  }
+
+  .footer__contacts-list {
+    line-height: 58px;
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+
+  .footer .la-phone {
+    display: inline-block;
+  }
+
+  .footer .la {
+    font-size: 22px;
+  }
+
+  .footer .button {
+    margin-top: 8px;
+    margin-bottom: 45px;
+  }
+
+  .footer__copyright {
+    line-height: 81px;
+    font-size: 18px;
+  }
+}
