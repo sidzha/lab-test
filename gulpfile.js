@@ -1,16 +1,71 @@
-const { src, dest, parallel } = require('gulp');
+const { src, dest, parallel, watch, series } = require('gulp');
 const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
+const del = require('del');
+const browserSync = require('browser-sync').create();
+const sass = require('gulp-sass');
+const rename = require('gulp-rename');
+const notify = require('gulp-notify');
+
+function html() {
+  return src('./src/*.html')
+    .pipe(dest('./build'))
+    .pipe(browserSync.stream());
+}
 
 function css() {
-  return src('./src/css/**/*.css')
-    .pipe(concat('styles.css'))
+  return src('./src/scss/**/*.scss')
+    .pipe(
+      sass({
+        outputStyle: 'expanded'
+      }).on('error', notify.onError())
+    )
+    .pipe(
+      rename({
+        suffix: '.min'
+      })
+    )
     .pipe(
       autoprefixer({
         cascade: false
       })
     )
-    .pipe(dest('./build/css'));
+    .pipe(dest('./build/css'))
+    .pipe(browserSync.stream());
 }
 
+function js() {
+  return src('./src/js/**/*.js')
+    .pipe(concat('scripts.js'))
+    .pipe(dest('./build/css'))
+    .pipe(browserSync.stream());
+}
+
+function img() {
+  return src('./src/svg/**')
+    .pipe(dest('./build/svg'))
+    .pipe(browserSync.stream());
+}
+
+function clean() {
+  return del(['build/*']);
+}
+
+function watchTask() {
+  browserSync.init({
+    server: {
+      baseDir: './build'
+    }
+  });
+  watch('./src/scss/**/*.scss', css);
+  watch('./src/js/**/*.js', js);
+  watch('./src/*.html', html);
+  watch('./src/svg/**', img);
+}
+
+exports.html = html;
 exports.css = css;
+exports.js = js;
+exports.ing = img;
+exports.watchTask = watchTask;
+exports.default = series(clean, parallel(html, css, js, img), watchTask);
