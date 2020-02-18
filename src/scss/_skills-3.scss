@@ -1,0 +1,68 @@
+.skills-3 {
+  position: relative;
+  height: 952px;
+  background: #f2f2f8 url('../img/bg-4.png') no-repeat 0 245px;
+
+  &:before {
+    position: absolute;
+    top: 55px;
+    left: 195px;
+    content: '';
+    width: 650px;
+    height: 450px;
+    background: url('../img/bg-3.png') no-repeat;
+    z-index: 1;
+  }
+
+  &:after {
+    position: absolute;
+    top: 488px;
+    left: 174px;
+    content: '';
+    width: 690px;
+    height: 410px;
+    background: url('../img/bg-5.png') no-repeat;
+    z-index: 2;
+  }
+}
+
+.skills-3__container {
+  width: 511px;
+  margin-left: 720px;
+
+  h2 {
+    padding-top: 114px;
+    font-size: 36px;
+    line-height: 41px;
+    letter-spacing: 0.3px;
+    margin-bottom: 29px;
+  }
+
+  p {
+    position: relative;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    margin-bottom: 67px;
+
+    &:after {
+      position: absolute;
+      top: 128px;
+      right: 233px;
+      content: '';
+      width: 170px;
+      height: 65px;
+      background: url('../img/arrow-3.svg') no-repeat;
+    }
+  }
+
+  a {
+    float: right;
+    margin-right: 94px;
+    line-height: 24px;
+    font-size: 18px;
+    color: #6f6eff;
+    padding-left: 34px;
+    background: url('../img/icon-peoples.svg') no-repeat;
+  }
+}

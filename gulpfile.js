@@ -42,8 +42,8 @@ function js() {
 }
 
 function img() {
-  return src('./src/svg/**')
-    .pipe(dest('./build/svg'))
+  return src('./src/img/**')
+    .pipe(dest('./build/img'))
     .pipe(browserSync.stream());
 }
 
@@ -60,7 +60,7 @@ function watchTask() {
   watch('./src/scss/**/*.scss', css);
   watch('./src/js/**/*.js', js);
   watch('./src/*.html', html);
-  watch('./src/svg/**', img);
+  watch('./src/img/**', img);
 }
 
 exports.html = html;

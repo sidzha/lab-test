@@ -1,0 +1,52 @@
+.skills-1 {
+  height: 862px;
+  position: relative;
+  background: url('../img/bg-1.png') no-repeat left 50px;
+
+  &::after {
+    position: absolute;
+    top: 555px;
+    left: 793px;
+    content: '';
+    height: 70px;
+    width: 400px;
+    background: url('../img/arrow-1.svg') no-repeat;
+  }
+}
+
+.skills-1__container {
+  float: right;
+  width: 350px;
+  text-align: right;
+  margin-right: 143px;
+
+  h1 {
+    font-size: 48px;
+    line-height: 59px;
+    padding-top: 167px;
+    margin-bottom: 72px;
+  }
+
+  a {
+    display: inline-block;
+    line-height: 24px;
+    font-size: 18px;
+    color: #6f6eff;
+    padding-left: 34px;
+    background: url('../img/icon-car.svg') no-repeat;
+  }
+}
+
+.skills-1__decr--big {
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.3px;
+  margin-bottom: 80px;
+}
+
+.skills-1__decr--small {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  margin-bottom: 17px;
+}
