@@ -6,6 +6,7 @@ const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
 const rename = require('gulp-rename');
 const notify = require('gulp-notify');
+const cleanCSS = require('gulp-clean-css');
 
 function html() {
   return src('./src/*.html')
@@ -30,6 +31,7 @@ function css() {
         cascade: false
       })
     )
+    .pipe(cleanCSS({ compatibility: 'ie8' }))
     .pipe(dest('./build/css'))
     .pipe(browserSync.stream());
 }

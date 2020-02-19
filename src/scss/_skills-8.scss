@@ -12,6 +12,11 @@
     background: url('../img/icon-hand.svg') no-repeat;
     padding-left: 34px;
     margin-left: 265px;
+    transition: text-shadow 0.2s ease-in;
+
+    &:hover {
+      text-shadow: 0px 0px 30px #6f6eff;
+    }
   }
 }
 

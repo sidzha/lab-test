@@ -34,6 +34,11 @@
     color: #6f6eff;
     padding-left: 34px;
     background: url('../img/icon-car.svg') no-repeat;
+    transition: text-shadow 0.2s ease-in;
+
+    &:hover {
+      text-shadow: 0px 0px 30px #6f6eff;
+    }
   }
 }
 

@@ -43,5 +43,10 @@
     text-align: center;
     color: #6f6eff;
     margin-left: 145px;
+    transition: text-shadow 0.2s ease-in;
+
+    &:hover {
+      text-shadow: 0px 0px 30px #6f6eff;
+    }
   }
 }
