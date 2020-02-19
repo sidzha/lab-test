@@ -37,7 +37,7 @@ function css() {
 function js() {
   return src('./src/js/**/*.js')
     .pipe(concat('scripts.js'))
-    .pipe(dest('./build/css'))
+    .pipe(dest('./build/js'))
     .pipe(browserSync.stream());
 }
 
