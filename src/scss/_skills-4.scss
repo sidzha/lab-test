@@ -1,0 +1,66 @@
+.skills-4 {
+  height: 719px;
+  background: #14141c;
+  padding-top: 47px;
+
+  h2 {
+    font-size: 36px;
+    font-weight: 100;
+    letter-spacing: 0.4px;
+    line-height: 41px;
+    text-align: center;
+    color: #5e5e7b;
+    margin-bottom: 41px;
+  }
+
+  p {
+    display: inline-block;
+    width: 511px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 16px;
+    color: #eaf5ff;
+    margin-left: 465px;
+    margin-right: 50px;
+    letter-spacing: 0.2px;
+  }
+
+  a {
+    display: inline-block;
+    text-align: center;
+    width: 82px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #6f6eff;
+    padding-top: 0px;
+    vertical-align: 15px;
+  }
+}
+
+.skills-4__container {
+  position: relative;
+  display: flex;
+  padding: 0 78px;
+  justify-content: space-around;
+  margin-bottom: 70px;
+
+  &:before {
+    position: absolute;
+    top: 212px;
+    right: 565px;
+    content: '';
+    width: 220px;
+    height: 20px;
+    background: url('../img/arrow-4.svg') no-repeat;
+  }
+
+  &:after {
+    position: absolute;
+    top: 339px;
+    right: 357px;
+    content: '';
+    width: 20px;
+    height: 96px;
+    background: url('../img/arrow-5.svg') no-repeat;
+  }
+}

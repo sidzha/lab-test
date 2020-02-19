@@ -1,0 +1,47 @@
+.skills-5 {
+  height: 981px;
+  background: white url('../img/bg-8.png') no-repeat 45px 70px;
+  background-size: 827px 986px;
+  padding-top: 170px;
+}
+
+.skills-5__container {
+  width: 440px;
+  margin-left: 809px;
+
+  h2 {
+    font-size: 36px;
+    font-weight: 100;
+    line-height: 41px;
+    letter-spacing: 1.3px;
+    margin-bottom: 90px;
+  }
+
+  p {
+    position: relative;
+    width: 400px;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 130px;
+
+    &:after {
+      position: absolute;
+      top: 165px;
+      right: 200px;
+      content: '';
+      width: 20px;
+      height: 96px;
+      background: url('../img/arrow-5.svg') no-repeat;
+    }
+  }
+
+  a {
+    display: inline-block;
+    width: 82px;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #6f6eff;
+    margin-left: 145px;
+  }
+}

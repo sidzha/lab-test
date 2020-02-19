@@ -1,0 +1,48 @@
+.skills-8 {
+  height: 924px;
+  background: url('../img/bg-16.png') no-repeat;
+  padding-top: 185px;
+
+  a {
+    display: inline-block;
+    height: 24px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #6f6eff;
+    background: url('../img/icon-hand.svg') no-repeat;
+    padding-left: 34px;
+    margin-left: 265px;
+  }
+}
+
+.skills-8__container {
+  color: #f2f2f2;
+  width: 400px;
+  margin-left: 175px;
+  margin-bottom: 55px;
+
+  h2 {
+    font-size: 36px;
+    font-weight: 100;
+    line-height: 41px;
+    letter-spacing: 1.3px;
+    margin-bottom: 45px;
+  }
+
+  p {
+    position: relative;
+    width: 340px;
+    font-size: 14px;
+    line-height: 16px;
+
+    &::after {
+      position: absolute;
+      top: 10px;
+      left: -20px;
+      content: '';
+      width: 110px;
+      height: 150px;
+      background: url('../img/arrow-10.svg') no-repeat;
+    }
+  }
+}
