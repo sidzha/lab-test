@@ -1,4 +1,155 @@
 .page-footer {
   height: 583px;
   background: #14141c;
+  padding-top: 42px;
+  color: #f2f2f2;
+  font-size: 14px;
+
+  a {
+    color: #f2f2f2;
+
+    &:hover {
+      color: #6f6eff;
+    }
+  }
+}
+
+.page-footer__container {
+  width: 1106px;
+  height: 519px;
+  margin: 0 auto;
+
+  select {
+    float: right;
+    width: 75px;
+    background: transparent;
+    color: #f2f2f2;
+    border: none;
+
+    option {
+      color: #333333;
+    }
+  }
+  .page-footer__link--active {
+    color: #6f6eff;
+
+    &:hover {
+      color: #adadfa;
+    }
+  }
+}
+
+.page-footer__breadcrumbs {
+  display: flex;
+  align-items: center;
+  padding-top: 65px;
+  margin-bottom: 5px;
+}
+
+.page-footer__logo {
+  width: 45px;
+  height: 63px;
+  background: url('../img/logo.svg');
+  background-size: 45px 63px;
+  margin-right: 15px;
+}
+
+.breadcrumbs-link {
+  background: url('../img/link-arrow.svg') no-repeat left;
+  line-height: 24px;
+  padding-left: 20px;
+}
+
+.page-footer__links {
+  display: flex;
+  margin-left: 80px;
+  margin-bottom: 100px;
+
+  span {
+    display: block;
+  }
+
+  .page-footer__menu {
+    &:nth-child(1) {
+      margin-right: 90px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 452px;
+    }
+
+    li {
+      width: 160px;
+      line-height: 28px;
+    }
+  }
+}
+
+.page-footer__contacts {
+  display: flex;
+  flex-direction: column;
+
+  span {
+    text-align: right;
+    margin-bottom: 40px;
+  }
+
+  a {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 23px 23px;
+  }
+
+  ul {
+    li {
+      display: inline;
+      margin-right: 20px;
+      &:nth-child(4) {
+        margin-right: 0;
+      }
+    }
+    &:nth-child(3) {
+      margin-top: 15px;
+    }
+  }
+}
+
+.contacts__link--mail {
+  background: url('../img/socials/Vector-2.svg');
+}
+
+.contacts__link--phone {
+  background: url('../img/socials/Vector-3.svg');
+}
+
+.contacts__link--viber {
+  background: url('../img/socials/Vector-1.svg');
+}
+
+.contacts__link--whatsapp {
+  background: url('../img/socials/Vector.svg');
+}
+
+.contacts__link--vk {
+  background: url('../img/socials/Vector-5.svg');
+}
+
+.contacts__link--facebook {
+  background: url('../img/socials/Vector-6.svg');
+}
+
+.contacts__link--insta {
+  background: url('../img/socials/Vector-7.svg');
+}
+
+.contacts__link--youtube {
+  background: url('../img/socials/Vector-4.svg');
+}
+
+.footer__copyright {
+  margin-left: 80px;
+  line-height: 24px;
 }
